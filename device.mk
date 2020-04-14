@@ -148,6 +148,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/privapp-permissions-gapp.xml:system/product/etc/permissions/privapp-permissions-gapp.xml
 
+#FOD ANIMATIONS
+EXTRA_FOD_ANIMATIONS := true
+
 # GPS
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/flp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/flp.conf \

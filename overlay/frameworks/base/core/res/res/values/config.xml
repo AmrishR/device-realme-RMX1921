@@ -468,6 +468,9 @@
     <!-- Whether to cleanup fingerprints upon connection to the daemon and when user switches -->
     <bool name="config_cleanupUnusedFingerprints">false</bool>
 
+    <!-- FOD Animations -->
+    <bool name="showFODAnimationPicker">true</bool>
+
     <!-- Whether device ignores the RSSNR signal implementation -->
     <bool name="config_ignoreRssnrSignalLevel">true</bool>
 
@@ -486,6 +489,6 @@
     <bool name="config_liveDisplayAvailable">true</bool>
 
     <!-- Is the battery LED intrusive? Used to decide if there should be a disable option -->
-    <bool name="config_intrusiveBatteryLed">false</bool>
+    <bool name="config_intrusiveBatteryLed">false</bool>   
 
 </resources>
