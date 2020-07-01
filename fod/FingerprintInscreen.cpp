@@ -28,6 +28,9 @@
 #define DIMLAYER_PATH "/sys/kernel/oppo_display/dimlayer_hbm"
 #define X_POS 445
 #define Y_POS 1967
+#define NOTIFY_BLANK_PATH "/sys/kernel/oppo_display/notify_panel_blank"
+#define AOD_MODE_PATH "/sys/kernel/oppo_display/aod_light_mode_set"
+#define DOZE_STATUS "/proc/touchpanel/DOZE_STATUS"
 #define FP_SIZE 196
 #define FP_BEGIN 1
 #define FP_ENDIT 0
@@ -103,6 +106,10 @@ Return<void> FingerprintInscreen::onRelease() {
 }
 
 Return<void> FingerprintInscreen::onShowFODView() {
+    if(get(DOZE_STATUS, FP_ENDIT)) {
+    set(NOTIFY_BLANK_PATH, FP_BEGIN);
+    set(AOD_MODE_PATH, FP_BEGIN);
+    }
     return Void();
 }
 
