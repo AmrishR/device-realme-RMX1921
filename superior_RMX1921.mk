@@ -31,8 +31,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="RMX1921" \
     TARGET_DEVICE="RMX1921"
 
-export SUPERIOR_OFFICIAL=true
-
 # Maintainer SuperiorOS for RMX1921
 PRODUCT_PROPERTY_OVERRIDES += \
         ro.superior.maintainer=Amrish
