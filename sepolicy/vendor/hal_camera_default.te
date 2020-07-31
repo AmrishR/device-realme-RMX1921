@@ -18,3 +18,6 @@ allow hal_camera_default proc_oppoversion:dir search;
 allow hal_camera_default debugfs:file { getattr open read };
 allow hal_camera_default proc_meminfo:file { getattr open read };
 allow hal_camera_default proc_oppoversion:file { open read };
+allow hal_camera_default hal_camera_default:tcp_socket { create };
+allow hal_camera_default vendor_file:file execute_no_trans;
+allow hal_camera_default vendor_shell_exec:file execute_no_trans;

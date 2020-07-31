@@ -1,2 +1,1 @@
-allow ueventd debugfs:dir read;
- 
+allow ueventd debugfs:dir { open read }; 
