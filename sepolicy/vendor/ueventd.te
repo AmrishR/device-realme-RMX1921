@@ -1,1 +1,2 @@
 allow ueventd debugfs:dir { open read }; 
+allow ueventd debugfs:file { getattr };
