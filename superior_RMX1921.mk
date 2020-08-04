@@ -13,6 +13,9 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 #boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
 
+# Def Launcher
+TARGET_LAUNCHER := lawnchair
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_DEVICE := RMX1921
 PRODUCT_NAME := superior_RMX1921
